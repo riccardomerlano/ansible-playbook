@@ -11,3 +11,9 @@
   gather_facts: false
   roles:
     - { role: centos7/dashboards }
+
+- name: logstash installation
+  hosts: logstash
+  gather_facts: false
+  roles:
+    - { role: centos7/logstash }
