@@ -1,0 +1,12 @@
+os1 ansible_host=192.168.1.20 ansible_connection=ssh ansible_user=root ansible_ssh_pass=testriccardo ip=192.168.1.20 roles=data,master,dashboard
+
+# List all the nodes in the os cluster
+[os-cluster]
+os1
+
+# List all the Master eligible nodes under this group
+[master]
+os1
+
+[dashboards]
+dashboards1
