@@ -10,10 +10,10 @@
   hosts: dashboards
   gather_facts: false
   roles:
-    - { role: centos7/dashboards }
+    - role: { role: centos7/dashboards }
 
 - name: logstash installation
   hosts: logstash
   gather_facts: false
   roles:
-    - { role: centos7/bngsudheer.logstash-oss }
+    - role: { role: centos7/logstash-oss }
