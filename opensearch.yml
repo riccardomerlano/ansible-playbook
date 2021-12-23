@@ -16,4 +16,4 @@
   hosts: logstash
   gather_facts: false
   roles:
-    - { role: centos7/logstash }
+    - { role: centos7/bngsudheer.logstash-oss }

@@ -1,0 +1,19 @@
+os1 ansible_host=34.79.90.152 336055888139-computeansible_user=336055888139-compute ip=10.132.0.11 roles=data,master
+
+dashboards1 ansible_host=34.79.90.152 ip=10.132.0.11 roles=dashboards
+
+logstash1 ansible_host=34.79.90.152 ip=10.132.0.11 roles=logstash
+
+# List all the nodes in the os cluster
+[os-cluster]
+os1
+
+# List all the Master eligible nodes under this group
+[master]
+os1
+
+[dashboards]
+dashboards1
+
+[logstash]
+logstash1
